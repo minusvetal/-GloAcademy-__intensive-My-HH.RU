@@ -8,6 +8,9 @@ body {
   font-family: 'Fira Sans', sans-serif;
   font-size: 16px;
   color: #111238;
+}
+
+.header {
   background-color:  #F2F3F6;;
 }
 .menu {
@@ -27,9 +30,10 @@ body {
 
 .btn {
   display: inline-block;
+  border: none;
 }
+
 .button-link {
-  color: #111238;
   padding: 10px;
   margin-right: 30px;
 }
@@ -42,9 +46,116 @@ body {
   color: #fff;
   background: #1A75E8;
   border-radius: 5px;
-  transition: 0.5s;
 }
 
 .button-primary:hover{
+  transition-duration: 0.3s;
+  transform: scaleX(1.05);
+}
+
+
+/* block hero */
+.hero-title {
+  padding-top: 43px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 53px;
+  padding-bottom: 15px;
+}
+
+.hero-text {
+  width: 460px;
+  font-size: 18px;
+  line-height: 140%;
+  padding-bottom: 30px;
+}
+
+.input-group{
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 25px;
+  }
+
+.input {
+  flex-grow: 1  ;
+  line-height: 19px;
+  color: #B2B2B2;
+  padding-left: 15px;
+}
+
+.search-ico {
+  margin-right: 10px;
+}
+
+.tags-group {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #B2B2B2;
+}
+
+.tag {
+  margin-left: 10px;
+  padding: 5px 10px;
+  color: #B2B2B2;
+  border: 1px solid #B2B2B2;
+  border-radius: 5px;
+}
+.tag:hover {
+  color:#1A75E8;
+  border-color:  #1A75E8;;
+}
+
+
+
+/* карточки категорий */
+
+.section {
+  padding: 80px 147px;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 180px;
+  height: 168px;
+  background: #F2F3F6;
+  border-radius: 10px;
+  padding: 55px 55px;
+  transition: background 0.6s, color 0.8s;
+
+}
+.card-icon {
+  width: 28px;
+  height: 24px;
+  fill: #111238;
+  margin-bottom: 15px;
+  transition: fill 0.8s;
+}
+
+.card:focus {
+  color: #fff;
+  background: #1A75E8;
+
+}
+.card:focus .card-icon{
+  fill: #fff;
+}
+
+.card:hover {
   transform: scale(1.05);
+  color: #fff;
+  background: #1A75E8;
+  box-shadow: 0px 0px 25px rgba(15, 17, 56, 0.5);
+}
+
+.card:hover .card-icon{
+  fill: #fff;
 }
