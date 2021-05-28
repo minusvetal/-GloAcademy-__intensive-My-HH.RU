@@ -6,5 +6,5 @@ const toogleMenu = (event) => {
   menu.classList.toggle('is-open');
 };
 
-menuButton.addEventListener('click', toogleMenu )
-closeMenuButton.addEventListener('click', toogleMenu )
+menuButton.addEventListener('click', toogleMenu );
+closeMenuButton.addEventListener('click', toogleMenu );
